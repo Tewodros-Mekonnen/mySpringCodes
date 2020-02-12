@@ -23,7 +23,7 @@ public class TennisCoach implements Coach {
 	 * theFortuneService; }
 	 */
 
-	// commented constructor injection above, below, I will define a default
+	// commented constructor injection above. Below, I will define a default
 	// constructor and print out a message
 	public TennisCoach() {
 		System.out.println("TennisCoach: inside default constructor");

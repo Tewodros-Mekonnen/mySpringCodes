@@ -27,6 +27,9 @@
 
 	<context:component-scan
 		base-package="com.luv2code.springdemo"></context:component-scan>
+		
+		<!-- to enable property file injection using Java annotations, we need to add the following line-->
+		<context:property-placeholder location="classpath:sport.properties"/>
 
 
 
