@@ -11,9 +11,22 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 
 	private FortuneService fortuneService;
+
+	// @Autowired
+	/*
+	 * public TennisCoach(FortuneService theFortuneService) { fortuneService =
+	 * theFortuneService; }
+	 */
 	
+	// commented constructor injection above, below, I will define a default constructor and print out a message
+	public TennisCoach() {
+		System.out.println("TennisCoach: inside default constructor");
+	}
+	
+	// define a setter method
 	@Autowired 
-	public TennisCoach(FortuneService theFortuneService) {
+	public void setFortuneService(FortuneService theFortuneService) {
+		System.out.println("TennisCoach: inside setter method");
 		fortuneService = theFortuneService;
 	}
 
