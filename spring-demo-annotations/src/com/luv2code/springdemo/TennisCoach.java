@@ -1,9 +1,10 @@
 package com.luv2code.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-/*@Component("thatSillyCoach")*/ // this is called Explicit bean id
+/*@Component("thatSillyCoach")*/ // this is called Explicit bean id, this id is specifically given to a bean
 
 @Component // when we don't explicitly give a bean id, as shown above, spring will assign
 			// default bean id
@@ -13,6 +14,7 @@ public class TennisCoach implements Coach {
 	// we can also inject fields, we just need to add @Autowired above the field declaration. 
 	//below I have commented the setFortuneServices method to enable field injection
 	@Autowired
+	@Qualifier("randomFortuneService")// the @Qualifier enables us to selects specific implementation, e.x. here we are selecting RandomFortuneService class
 	private FortuneService fortuneService;
 
 	// @Autowired
