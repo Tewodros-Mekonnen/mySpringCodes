@@ -14,7 +14,8 @@ public class TennisCoach implements Coach {
 	// we can also inject fields, we just need to add @Autowired above the field declaration. 
 	//below I have commented the setFortuneServices method to enable field injection
 	@Autowired
-	@Qualifier("randomFortuneService")// the @Qualifier enables us to selects specific implementation, e.x. here we are selecting RandomFortuneService class
+	@Qualifier("randomFortuneService")// the @Qualifier enables us to selects specific implementation, e.x. here we are selecting 
+									  //RandomFortuneService class
 	private FortuneService fortuneService;
 
 	// @Autowired
