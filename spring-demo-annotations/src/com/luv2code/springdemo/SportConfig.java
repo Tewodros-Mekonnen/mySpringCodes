@@ -26,7 +26,12 @@ public class SportConfig {
 	public Coach swimCoach_2() {
 		return new SwimCoach_2(sadFortuneService()); // here we inject the object we created above. object sadFortuneService is passed through
 													 // the constructor that accepts an object of type FortuneServicve. The method name 
-												    // swimCoach() will be used as bean id inside SwimJavaConfigDemoApp.java file  	
+												    // swimCoach() will be used as bean id inside SwimJavaConfigDemoApp.java file 
+		// the above is same as 
+		// public Coach swimCoach_2(){
+		//    SwimCoach_2 mySwimCoach_2 = new SwimCoach_2(sadFortuneService);
+		//    return mySwimCoach_2;
+		// }
 	}
 
 }
