@@ -32,3 +32,4 @@ public class JavaConfigDemoApp {
 
 // N.B 
 // in order for this app to work, we need to go to SportConfig.java and uncomment @ComponentScan and may be we need to comment the beans. 
+// ComponentScan scans the package and looks for class name TennisCoach since we are passing tennisCoach as bean id, notice here 't' is small letter.

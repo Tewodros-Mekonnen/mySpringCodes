@@ -1,13 +1,18 @@
 package com.luv2code.springdemo;
 
+
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 //@ComponentScan("com.luv2code.springdemo") // we commented this @ComponentScan so that we can use the beans defined manually below. we can 
 											// comment the beans and we can use the ComponentScan, which scans the package 
 											// we passed in the parenthesis.
+
+
+@PropertySource("classpath:sport.properties")// this is used to inject from properties file called sport.properties
 public class SportConfig {
 	
 	// define bean for our sadFortuneService class
