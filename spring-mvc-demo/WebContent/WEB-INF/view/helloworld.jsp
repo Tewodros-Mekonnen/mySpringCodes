@@ -6,7 +6,7 @@
 
 	<br>
 	<br> 
-	The message: ${messages }  <!-- reading data from the model, HelloWorldController.java -->
+	The message: ${message }  <!-- reading data from the model, HelloWorldController.java -->
 
 </body>
 </html>

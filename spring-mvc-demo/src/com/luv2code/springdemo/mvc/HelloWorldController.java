@@ -52,7 +52,7 @@ public class HelloWorldController {
 		theName = theName.toUpperCase();
 
 		// create the message
-		String result = "Hey" + theName + " my friend from v3!";
+		String result = "Hey " + theName + ", my friend from v3!";
 
 		// add message to the model
 		model.addAttribute("message", result);
